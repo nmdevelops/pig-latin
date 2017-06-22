@@ -7,6 +7,7 @@ string = prompt("Phrase to translate?");
 var translatedString;
 var stopLoop=100;
 var sliceLimit = 0;
+var space = " "
 //console.log(string);
 var processConsonants = (function () {
   var consonantString = string.slice(0,sliceLimit);

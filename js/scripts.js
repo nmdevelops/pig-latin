@@ -8,7 +8,12 @@ var translatedString;
 var stopLoop=100;
 var sliceLimit = 0;
 //console.log(string);
-//behavior 2
+var processConsonants = (function () {
+  var consonantString = string.slice(0,sliceLimit);
+  var stringBase = string.slice(sliceLimit);
+  alert(stringBase + consonantString + "ay")
+})
+
 var pigTranslate = (function () {
 
   string = string.toLowerCase();
@@ -27,10 +32,11 @@ for (var i = 0; i < stopLoop; i++) {
   if (sliceLimit === 0) {
     translatedString = string + "way";
     alert(translatedString);
+  } else if (string.charAt(sliceLimit-1) === "q" && string.charAt(sliceLimit) === "u") {
+    sliceLimit += 1;
+    processConsonants();
   } else {
-    var consonantString = string.slice(0,sliceLimit);
-    var stringBase = string.slice(sliceLimit);
-    alert(stringBase + consonantString + "ay");
+    processConsonants();
   }
 })
 

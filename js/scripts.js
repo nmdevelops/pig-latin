@@ -1,5 +1,6 @@
 //to be moved to back end
 var string;
+// var explodedString = [];
 //to be moved to front end
 string = prompt("Phrase to translate?");
 //back-end
@@ -17,11 +18,14 @@ var pigTranslate = (function () {
   if (string.charAt(0) === "a" || string.charAt(0) === "e" || string.charAt(0) === "i" || string.charAt(0) === "o" || string.charAt(0) === "u" ) {
     translatedString = string + "way";
     alert(translatedString);
-
-    // behavior 3
   }
-
-
+// behavior 3
+else {
+ var consonantString = string.slice(0,1);
+ var stringBase = string.slice(1);
+ alert(stringBase + consonantString + "ay");
+// alert("whatsup")
+}
 
 })
 

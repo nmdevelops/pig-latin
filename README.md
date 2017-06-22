@@ -18,6 +18,7 @@ _Behavior -  Input -  Output_
 4. For words beginning with two or more consonants, move all of the first consecutive consonants to the end, and add "ay".  -  "threat"  -  "eatThray"
 5. If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first! - "squeal" "quebec" "quest" "questions"- "ealSquay" "ebecQuay"
 6. For words beginning with "y", treat "y" as a consonant.  - "yup"  - "upYay"
+7. translate sentences.
 
 
 ## Setup/Installation Requirements
